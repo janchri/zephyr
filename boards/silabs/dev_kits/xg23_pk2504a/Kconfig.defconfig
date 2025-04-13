@@ -1,7 +1,7 @@
 # Copyright (c) 2025 Christoph Jans
 # SPDX-License-Identifier: Apache-2.0
 
-if BOARD_PG23_PK2504A
+if BOARD_XG23_PK2504A
 
 config LOG_BACKEND_SWO_FREQ_HZ
 	default 875000
@@ -14,4 +14,4 @@ config FPU
 
 endif # SOC_GECKO_USE_RAIL
 
-endif # BOARD_PG23_PK2504A
+endif # BOARD_XG23_PK2504A

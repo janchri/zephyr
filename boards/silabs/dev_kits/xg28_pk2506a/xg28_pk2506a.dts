@@ -5,14 +5,14 @@
  */
 
 /dts-v1/;
-#include <silabs/efm32pg28b310f1024im68.dtsi>
+#include <silabs/xg28/efm32pg28b310f1024im68.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <zephyr/dt-bindings/regulator/silabs_dcdc.h>
-#include "pg28_pk2506a-pinctrl.dtsi"
+#include "xg28_pk2506a-pinctrl.dtsi"
 
 / {
 	model = "Silicon Labs PG28 Pro Kit";
-	compatible = "silabs,pg28_pk2506a", "silabs,efm32pg28";
+	compatible = "silabs,xg28_pk2506a", "silabs,efm32pg28";
 
 	chosen {
 		zephyr,console = &eusart1;
