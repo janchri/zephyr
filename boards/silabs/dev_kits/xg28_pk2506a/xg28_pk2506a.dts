@@ -17,6 +17,7 @@
 	chosen {
 		zephyr,console = &eusart1;
 		zephyr,shell-uart = &eusart1;
+		zephyr,uart-pipe = &eusart1;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
@@ -113,11 +114,6 @@
 
 &wdog1clk {
 	clocks = <&lfxo>;
-};
-
-&usart0 {
-	compatible = "silabs,usart-uart";
-	status = "disabled";
 };
 
 &eusart0 {
@@ -223,12 +219,6 @@
 		scratch_partition: partition@74000 {
 			label = "image-scratch";
 			reg = <0x00074000 DT_SIZE_K(32)>;
-		};
-
-		/* Set 16 kB of storage at the end of the 1536 kB of flash */
-		storage_partition: partition@7c000 {
-			label = "storage";
-			reg = <0x0007c000 DT_SIZE_K(16)>;
 		};
 	};
 };
