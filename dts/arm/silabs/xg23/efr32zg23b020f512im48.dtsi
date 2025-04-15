@@ -5,7 +5,7 @@
  */
 
 #include <mem.h>
-#include <silabs/efr32xg23.dtsi>
+#include <silabs/xg23/efr32xg23.dtsi>
 
 / {
 	sram0: memory@20000000 {
