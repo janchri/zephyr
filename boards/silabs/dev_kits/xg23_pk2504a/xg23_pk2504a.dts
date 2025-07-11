@@ -15,8 +15,9 @@
 	compatible = "silabs,xg23_pk2504a", "silabs,efm32pg23";
 
 	chosen {
-		zephyr,console = &eusart1;
-		zephyr,shell-uart = &eusart1;
+		zephyr,console = &eusart0;
+		zephyr,shell-uart = &eusart0;
+		zephyr,uart-pipe = &eusart0;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
@@ -108,17 +109,12 @@
 	clocks = <&lfxo>;
 };
 
-&usart0 {
-	compatible = "silabs,usart-uart";
-	status = "disabled";
-};
-
 &eusart0 {
 	compatible = "silabs,eusart-uart";
 	current-speed = <115200>;
 	pinctrl-0 = <&eusart0_default>;
 	pinctrl-names = "default";
-	status = "disabled";
+	status = "okay";
 };
 
 &eusart1 {
@@ -126,7 +122,7 @@
 	current-speed = <115200>;
 	pinctrl-0 = <&eusart1_default>;
 	pinctrl-names = "default";
-	status = "okay";
+	status = "disabled";
 };
 
 &i2c0 {
@@ -215,12 +211,6 @@
 		scratch_partition: partition@74000 {
 			label = "image-scratch";
 			reg = <0x00074000 DT_SIZE_K(32)>;
-		};
-
-		/* Set 16 kB of storage at the end of the 1536 kB of flash */
-		storage_partition: partition@7c000 {
-			label = "storage";
-			reg = <0x0007c000 DT_SIZE_K(16)>;
 		};
 	};
 };
