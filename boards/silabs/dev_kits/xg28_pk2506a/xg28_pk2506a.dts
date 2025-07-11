@@ -5,7 +5,7 @@
  */
 
 /dts-v1/;
-#include <silabs/efm32pg28b310f1024im68.dtsi>
+#include <silabs/xg28/efm32pg28b310f1024im68.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <zephyr/dt-bindings/regulator/silabs_dcdc.h>
 #include "xg28_pk2506a-pinctrl.dtsi"
