@@ -10,7 +10,7 @@ CONFIG_REGULATOR=y
 CONFIG_SOC_GECKO_EMU_DCDC=y
 CONFIG_SOC_GECKO_EMU_DCDC_MODE_ON=y
 
-## Optionally, deactive UART Console and use RTT instead
+## Optionally, deactivate the UART console and use RTT instead.
 #CONFIG_UART_CONSOLE=n
 #CONFIG_RTT_CONSOLE=y
 #CONFIG_USE_SEGGER_RTT=y
