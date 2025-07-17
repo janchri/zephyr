@@ -24,7 +24,7 @@ manifest:
     - name: babblesim
       url-base: https://github.com/BabbleSim
     - name: hal_silabs_pr
-      url-base: https://github.com/janchri/hal_silabs.git
+      url-base: https://github.com/janchri
 
   group-filter: [-babblesim, -optional]
 
