@@ -1,7 +1,8 @@
 # Copyright (c) 2024 Yishai Jaffe
+# Copyright (c) 2025 Christoph Jans
 # SPDX-License-Identifier: Apache-2.0
 
-if SOC_SERIES_EFR32ZG23
+if SOC_SERIES_EFR32ZG23 || SOC_SERIES_EFM32PG23
 
 config NUM_IRQS
 	# must be >= the highest interrupt number used

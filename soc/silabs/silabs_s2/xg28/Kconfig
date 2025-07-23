@@ -1,7 +1,7 @@
-# Copyright (c) 2024 Yishai Jaffe
+# Copyright (c) 2025 Christoph Jans
 # SPDX-License-Identifier: Apache-2.0
 
-config SOC_SERIES_EFR32ZG23
+config SOC_SERIES_EFM32PG28
 	select ARM
 	select ARMV8_M_DSP
 	select ARM_TRUSTZONE_M
@@ -18,5 +18,4 @@ config SOC_SERIES_EFR32ZG23
 	select SOC_GECKO_DEV_INIT
 	select SOC_GECKO_EMU
 	select SOC_GECKO_GPIO
-	select SOC_GECKO_HAS_RADIO
 	select SOC_GECKO_SE
