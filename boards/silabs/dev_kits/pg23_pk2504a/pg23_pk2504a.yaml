@@ -1,0 +1,27 @@
+identifier: pg23_pk2504a
+name: PG23 Pro Kit PK2504A Rev. A03
+type: mcu
+arch: arm
+ram: 64
+flash: 512
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - clock_control
+  - comparator
+  - counter
+  - dma
+  - entropy
+  - flash
+  - gpio
+  - i2c
+  - led
+  - pinctrl
+  - spi
+  - uart
+  - watchdog
+testing:
+  ignore_tags:
+    - pm
+vendor: silabs
